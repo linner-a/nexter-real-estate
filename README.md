@@ -1,2 +1,2 @@
 # nexter-real-estate
-Website for a fictional real estate company - In progress
+Website for a fictional real estate company - Focusing on CSS grid
