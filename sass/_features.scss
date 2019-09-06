@@ -3,6 +3,30 @@
     margin: 15rem auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // auto-fit makes it responsive - if 3 columns fit that are 250px each, then 3 will be rendered, if only 2 fit there will only be 2 columns etc.
     grid-gap: 6rem;
+    align-items: start;
+    
+}
+
+.feature {
+
+    display: grid;
+    grid-template-columns: min-content 1fr; 
+    // No need to specify rows as the grid-template-columns property is set to auto by default, and that is what we want as it just expands to fit the content
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+
+    &__icon {
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2; // cannot use -1 as that only works on explicit rows, as we have not specified any rows here we only have implicit rows and need to say span 2 instead.
+        transform: translateY(-1rem);
+    }
+
+    &__text {
+        font-size: 1.7rem; 
+    }
+
 }
