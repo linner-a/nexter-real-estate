@@ -6,6 +6,10 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // auto-fit makes it responsive - if 3 columns fit that are 250px each, then 3 will be rendered, if only 2 fit there will only be 2 columns etc.
     grid-gap: 6rem;
     align-items: start;
+
+    @media only screen and (max-width: $bp-large) {
+        margin: 8rem auto;
+    }
     
 }
 
