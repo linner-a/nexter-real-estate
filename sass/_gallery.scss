@@ -7,6 +7,10 @@
     grid-gap: 2.5rem;
     padding: 2.5rem;
 
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+
     &__item {
     
         &--1 {
