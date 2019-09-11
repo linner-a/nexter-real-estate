@@ -56,4 +56,8 @@ body {
     @media only screen and (max-width: $bp-medium) {
         grid-template-rows: 6rem calc(100vh - 6rem); // calc(100vh - 6rem) is to subtract the 6rem of the sidebar that now is on top, so that the header will not be below the fold. No more rows are needed as we want the rest to be just adjusting to the content they contain (min-content), which will be done automatically if nothing else is specified. 
     }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: 6rem calc(100vh - 12rem); // calc(100vh - 12rem) is to also compensate for the search bar also taking a bit of the view height in mobile browsers.
+    }
 }

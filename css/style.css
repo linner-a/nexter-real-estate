@@ -28,6 +28,9 @@ body {
   @media only screen and (max-width: 50rem) {
     .container {
       grid-template-rows: 6rem calc(100vh - 6rem); } }
+  @media only screen and (max-width: 37.5rem) {
+    .container {
+      grid-template-rows: 6rem calc(100vh - 12rem); } }
 
 .heading-1 {
   font-family: "Josefin Sans", sans-serif;
@@ -245,6 +248,9 @@ body {
     .story__pictures {
       grid-column: 1 / -1;
       padding: 6rem; } }
+  @media only screen and (max-width: 37.5rem) {
+    .story__pictures {
+      padding: 4rem; } }
 
 .story__img--1 {
   width: 100%;
@@ -294,6 +300,9 @@ body {
   @media only screen and (max-width: 62.5rem) {
     .homes {
       margin: 8rem 0; } }
+  @media only screen and (max-width: 37.5rem) {
+    .homes {
+      margin: 8rem -2rem; } }
 
 .home {
   background-color: #f9f7f6;

@@ -10,13 +10,15 @@
         margin: 8rem 0;
     }
     
+    @media only screen and (max-width: $bp-small) {
+        margin: 8rem -2rem;
+    }
 }
 
 .home {
     background-color: $color-grey-light-1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
- //   row-gap: 3.5rem;
 
     &__img {
         width: 100%;
