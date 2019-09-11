@@ -43,6 +43,11 @@
             grid-row: 1 / -1; 
             width: 100%;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 124%;
+            transform: translateX(-6rem);
+        }
     }
 
     &__content {
