@@ -272,6 +272,10 @@ body {
     .story__img--2 {
       grid-row: 1 / -1;
       width: 100%; } }
+  @media only screen and (max-width: 37.5rem) {
+    .story__img--2 {
+      width: 124%;
+      transform: translateX(-6rem); } }
 
 .story__content {
   background-color: #f9f7f6;
